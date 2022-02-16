@@ -1,9 +1,9 @@
-const Nav = () => 
-{
+function Nav () {
     return (
-        <nav>
-            <div>
-            </div>
-        </nav>
+        <div>
+            <nav className="">
+
+            </nav>
+        </div>
     )
 }

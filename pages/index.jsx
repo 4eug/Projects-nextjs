@@ -14,8 +14,7 @@ export default function Home() {
 
 	  <Nav/>
 
-		{/* <HeroSection /> */}
-      {/* <div className="text-red-200">hello</div> */}
+		<HeroSection />
     </>
   );
 }

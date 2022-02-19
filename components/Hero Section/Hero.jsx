@@ -1,4 +1,5 @@
 import React from "react";
+import Shape from "../utilities/shape/shape";
 
 function HeroSection() {
     return (
@@ -16,10 +17,15 @@ function HeroSection() {
                 </h3>
 
             {/*  Pull Down Arrow */}
-
                 <div>
                     Arrow Button
                 </div>
+            </div>
+
+             {/* Shape */}
+
+            <div>
+               <Shape/>
             </div>
 
         </section>

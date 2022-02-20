@@ -2,12 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer base {
+  .btn {
+    @apply rounded-ijikod-px-20 text-ijikod-xsm;
+  }
+
+  .btn-common {
+    @apply btn w-ijikod-px-124 h-ijikod-px-40;
+  }
+
   body {
-    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+    @apply font-ijikod-open-sans;
+  }
+
+  button.red {
+    @apply btn-common bg-ijikod-red text-white transition-colors duration-300 hover:bg-red-600;
+  }
+
+  button.dark {
+    @apply btn bg-ijikod-dark h-ijikod-px-50 w-ijikod-px-270 text-white;
+  }
+
+  button.white {
+    @apply btn-common bg-white text-black;
+  }
+
+  a.nav-link{
+    @apply text-ijikod-sm text-ijikod-dark;
   }
 
   nav {
-    @apply bg-white-200;
+    @apply h-ijikod-px-60 bg-white flex justify-between items-center px-5 xxsm:px-8 md:px-28 lg:px-44 xl:px-60;
   }
-} */
+}

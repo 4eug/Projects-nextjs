@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { IoMenu } from "react-icons/io5";
+import { IoClose, IoMenu } from "react-icons/io5";
+
 
 const NavItem = (props) => (
   <li>
@@ -11,7 +12,9 @@ const NavItem = (props) => (
   </li>
 );
 
-function Nav(props) {
+function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav>
       <div className="h-8 w-20 relative">
@@ -34,7 +37,20 @@ function Nav(props) {
       </div>
 
       <button className="red hidden md:block">Contact Us</button>
-      <IoMenu size={30} className="block md:hidden" />
+      {/* <IoMenu size={30} className="block md:hidden" /> */}
+      <div className="block md:hidden ">
+							<button
+								onClick={() => setIsOpen(!isOpen)}
+								type="button"
+								className="inline-flex items-center justify-center p-4 text-black"
+								aria-controls="mobile-menu"
+								aria-expanded="false"
+							>
+								<span className="sr-only">Open Menu</span>
+								{!isOpen ? (<IoMenu size={35}/>	) : (<IoClose size={35}/>
+								)}
+							</button>
+						</div>
     </nav>
   );
 }

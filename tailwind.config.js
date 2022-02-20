@@ -31,7 +31,7 @@ module.exports = {
 
 
       height: {
-        'ijikod-px-60': '60px',
+        'ijikod-px-80': '80px',
         'ijikod-px-40': '40px',
         'ijikod-px-50': '50px',
       },

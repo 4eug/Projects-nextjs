@@ -24,10 +24,10 @@ function HeroSection() {
 
           {/*  Pull Down Arrow */}
           <div className="flex items-center justify-center h-20">
-          <div className="animate-bounce w-6 h-6 items-center">
+          <div className="animate-bounce w-8 h-14 items-center">
             <Image 
             layout="fill"
-            objectFit="contain"
+            objectFit=""
             priority
             src={"/Next page.png"}
             alt="arrow-done"

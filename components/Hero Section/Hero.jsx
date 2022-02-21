@@ -1,4 +1,5 @@
 import React from "react";
+import { IoArrowDown } from "react-icons/io5";
 import Shape from "../utilities/shape/shape";
 
 function HeroSection() {
@@ -13,8 +14,8 @@ function HeroSection() {
              Experiences
           </h1>
 
-          <div className="space-y-3">
-            <p className="text-base text-white text-center mt-1 font-light">
+          <div className="m-14">
+            <p className="text-base text-white text-center mt-4 font-light">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliquat enim
               ad minim veniam, quis nostrud exercitation.
@@ -22,7 +23,11 @@ function HeroSection() {
           </div>
 
           {/*  Pull Down Arrow */}
-          <div>Arrow Button</div>
+          <div className="flex items-center justify-center h-60">
+          <div className="animate-bounce w-6 h-6 items-center">
+          <IoArrowDown size={40} />
+            </div>
+            </div>
         </div>
 
         {/* Shape */}

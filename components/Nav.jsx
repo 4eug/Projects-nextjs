@@ -16,7 +16,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav>
+    <nav className="fixed left-0 right-0">
       <div className="h-8 w-20 relative">
         <Image
           layout="fill"
@@ -51,6 +51,8 @@ function Nav() {
 								)}
 							</button>
 						</div>
+
+            
     </nav>
   );
 }

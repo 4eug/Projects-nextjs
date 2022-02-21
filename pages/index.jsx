@@ -15,7 +15,10 @@ export default function Home() {
 	  <Nav/>
 
 		<HeroSection />
-    
+    <HeroSection />
+    <HeroSection />
+    <HeroSection />
+    <HeroSection />
     </>
   );
 }

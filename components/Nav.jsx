@@ -16,7 +16,8 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed left-0 right-0">
+    <div className="py-5">
+    <nav className="fixed  top-0 inset-x-0 ">
       <div className="h-8 w-20 relative">
         <Image
           layout="fill"
@@ -39,21 +40,22 @@ function Nav() {
       <button className="red hidden md:block">Contact Us</button>
       {/* <IoMenu size={30} className="block md:hidden" /> */}
       <div className="block md:hidden ">
-							<button
+							<div
 								onClick={() => setIsOpen(!isOpen)}
 								type="button"
-								className="inline-flex items-center justify-center p-4 text-black"
+								className="inline-flex items-center justify-center p-2 text-black"
 								aria-controls="mobile-menu"
 								aria-expanded="false"
 							>
 								<span className="sr-only">Open Menu</span>
 								{!isOpen ? (<IoMenu size={35}/>	) : (<IoClose size={35}/>
 								)}
-							</button>
+							</div>
 						</div>
 
             
     </nav>
+    </div>
   );
 }
 

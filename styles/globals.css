@@ -27,11 +27,17 @@
     @apply btn-common bg-white text-black;
   }
 
-  a.nav-link{
+  a.nav-link {
     @apply text-ijikod-sm text-ijikod-dark;
   }
 
   nav {
     @apply h-ijikod-px-80 bg-white flex justify-between items-center px-5 xxsm:px-8 md:px-28 lg:px-44 xl:px-60;
+  }
+}
+
+@layer components {
+  .card {
+    @apply w-full py-10 px-8 bg-gray-200 flex flex-col items-center rounded-lg;
   }
 }

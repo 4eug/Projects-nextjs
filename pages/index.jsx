@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
 import HeroSection from "../components/Hero Section/Hero";
+import AboutSection from "../components/About Us Section/About";
+import MainAbout from "../components/About Us Section/MainAbout";
 
 export default function Home() {
   return (
@@ -15,10 +17,8 @@ export default function Home() {
 	  <Nav/>
 
 		<HeroSection />
-    {/* <HeroSection />
-    <HeroSection />
-    <HeroSection />
-    <HeroSection /> */}
+    <MainAbout/>
+    <AboutSection />
     </>
   );
 }

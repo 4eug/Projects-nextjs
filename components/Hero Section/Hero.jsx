@@ -1,5 +1,5 @@
 import React from "react";
-import { IoArrowDown } from "react-icons/io5";
+import Image from "next/image";
 import Shape from "../utilities/shape/shape";
 
 function HeroSection() {
@@ -23,9 +23,18 @@ function HeroSection() {
           </div>
 
           {/*  Pull Down Arrow */}
-          <div className="flex items-center justify-center h-60">
+          <div className="flex items-center justify-center h-20">
           <div className="animate-bounce w-6 h-6 items-center">
-          <IoArrowDown size={40} />
+            <Image 
+            layout="fill"
+            objectFit="contain"
+            priority
+            src={"/Next page.png"}
+            alt="arrow-done"
+            className="h-full w-full"
+            
+            />
+          {/* <IoArrowDown size={40} /> */}
             </div>
             </div>
         </div>

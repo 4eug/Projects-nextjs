@@ -1,7 +1,6 @@
 import React, { useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Transition } from "@headlessui/react";
 import { IoClose, IoMenu } from "react-icons/io5";
 
 

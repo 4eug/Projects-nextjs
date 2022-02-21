@@ -27,7 +27,7 @@
     @apply btn-common bg-white text-black;
   }
 
-  a.nav-link{
+  a.nav-link {
     @apply text-ijikod-sm text-ijikod-dark;
   }
 

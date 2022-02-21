@@ -20,7 +20,8 @@ module.exports = {
 
       colors: {
         'ijikod-dark': '#2A2E43',
-        'ijikod-red': '#F40E41'
+        'ijikod-red': '#F40E41',
+        'ijikod-wine': '##8F1742',
       },
 
       fontSize: {
@@ -34,6 +35,10 @@ module.exports = {
         'ijikod-px-80': '80px',
         'ijikod-px-40': '40px',
         'ijikod-px-50': '50px',
+      },
+
+      backgroundImage: {
+        'ijikod-hero-gradient': "linear-gradient(0deg, #8F1742 10.84%, #2A2E43 93.27%)",
       },
 
       width: {

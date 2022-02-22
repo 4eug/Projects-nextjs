@@ -2,6 +2,7 @@ import Head from "next/head";
 import Nav from "../components/Nav";
 import HeroSection from "../components/Hero Section/Hero";
 import AboutSection from "../components/About Us Section/About";
+import WhatWeDoSection from "../components/WWD Section/whatWeDo"
 
 export default function Home() {
   return (
@@ -18,8 +19,10 @@ export default function Home() {
       </section>
       <section className="main bg-ijikod-wine py-20 text-white">
         <AboutSection />
-        {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, nisi. */}
       </section>
+      <section className="main h-screen">
+        <WhatWeDoSection />
+        </section>
     </>
   );
 }

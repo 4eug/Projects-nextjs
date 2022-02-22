@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "../utilities/cards/card";
 import AboutCard from "../utilities/cards/aboutCard";
 import Image from "next/image";
 
@@ -10,12 +9,12 @@ function AboutSection() {
 
       <div className="flex gap-10 items-end mt-10">
         <div className="w-1/3">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+        dolor in reprehenderit in voluptate velit esse cillum dolore
+        eu fugiat nulla pariatur.
         </div>
 
         <div className="w-1/3 flex flex-col items-center text-center">
@@ -59,7 +58,7 @@ function AboutSection() {
           <AboutCard
             title="Excellence"
             content={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo"
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }
             src="/core-value-icon-1.svg"
           />
@@ -67,7 +66,7 @@ function AboutSection() {
           <AboutCard
             title="Excellence"
             content={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo"
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." 
             }
             src="/core-value-icon-2.svg"
           />
@@ -75,7 +74,7 @@ function AboutSection() {
           <AboutCard
             title="Excellence"
             content={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo"
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est labrum."
             }
             src="/core-value-icon-3.svg"
           />

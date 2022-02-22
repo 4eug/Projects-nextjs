@@ -21,17 +21,39 @@ module.exports = {
       colors: {
         'ijikod-dark': '#2A2E43',
         'ijikod-red': '#F40E41',
-        'ijikod-wine': '##8F1742',
+        'ijikod-wine': '#8F1742',
+        'ijikod-wine-dark': '#7D0032',
       },
 
       fontSize: {
-        'ijikod-xlg': '72px',
+        'ijikod-xxxlg': '72px',
+        'ijikod-xxlg': '62px',
+        'ijikod-xlg': '52px',
+        'ijikod-lg': '44px',
+
+        'ijikod-xxmd': '38px',
+        'ijikod-xmd': '32px',
+        'ijikod-md': '28px',
+        
+        'ijikod-sm-md': '24px',
+
         'ijikod-sm': '16px',
         'ijikod-xsm': '14px',
       },
 
+      minHeight: (theme) => ({
+        'h-min-screen': '100vh',
+        ...theme('spacing'),
+      }),
+
+      minWidth: (theme) => ({
+        ...theme('spacing'),
+      }),
 
       height: {
+        'ijikod-h-nav': '15%',
+        'ijikod-h-hero': '85%',
+        '5/2': '40%',
         'ijikod-px-80': '80px',
         'ijikod-px-40': '40px',
         'ijikod-px-50': '50px',

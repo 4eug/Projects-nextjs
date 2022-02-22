@@ -32,6 +32,40 @@
   }
 
   nav {
-    @apply h-ijikod-px-80 bg-white flex justify-between items-center px-5 xxsm:px-8 md:px-28 lg:px-44 xl:px-60;
+    @apply h-ijikod-h-nav bg-white flex justify-between items-center px-5 xxsm:px-8 md:px-28 lg:px-44 xl:px-60;
+  }
+
+  h1 {
+    @apply text-ijikod-lg sm:text-ijikod-xlg md:text-ijikod-xxlg lg:text-ijikod-xxxlg text-center text-white font-bold;
+  }
+
+  h2 {
+    @apply text-ijikod-md sm:text-ijikod-xmd md:text-ijikod-xxmd lg:text-ijikod-lg text-white font-bold;
+  }
+
+  h3 {
+    @apply text-ijikod-xmd text-white font-semibold;
+  }
+  
+  h4 {
+    @apply text-ijikod-sm-md;
+  }
+
+  h5 {
+    @apply text-ijikod-sm;
+  }
+
+  section.main {
+    @apply px-5 xsm:px-16 sm:px-20 md:px-32 lg:px-40;
+  }
+}
+
+@layer components {
+  .card {
+    @apply py-10 px-8 bg-ijikod-wine-dark flex flex-col rounded-lg;
+  }
+
+  .hero-shape {
+    @apply bg-[url('/shape.png')] h-1/3 w-full bg-cover bg-center bg-no-repeat absolute bottom-0;
   }
 }

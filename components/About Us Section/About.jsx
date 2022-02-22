@@ -15,7 +15,10 @@ function AboutSection() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          pariatur. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut tempor
+           incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         </div>
 
         <div className="lg:w-1/3 flex flex-col items-center text-center">
@@ -31,7 +34,8 @@ function AboutSection() {
           <h4 className="my-5">Mission</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            illo.
+            illo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           </p>
         </div>
 
@@ -48,7 +52,8 @@ function AboutSection() {
           <h4 className="my-5">Vision</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            illo.
+            illo  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           </p>
         </div>
       </div>
@@ -59,7 +64,7 @@ function AboutSection() {
           <AboutCard
             title="Excellence"
             content={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo"
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }
             src="/core-value-icon-1.svg"
           />
@@ -67,7 +72,7 @@ function AboutSection() {
           <AboutCard
             title="Excellence"
             content={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo"
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }
             src="/core-value-icon-2.svg"
           />
@@ -75,7 +80,7 @@ function AboutSection() {
           <AboutCard
             title="Excellence"
             content={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo"
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             }
             src="/core-value-icon-3.svg"
           />

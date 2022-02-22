@@ -12,7 +12,7 @@ const NavItem = (props) => (
 );
 
 function Nav(props) {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav>

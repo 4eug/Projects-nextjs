@@ -34,7 +34,7 @@ module.exports = {
         'ijikod-xxmd': '38px',
         'ijikod-xmd': '32px',
         'ijikod-md': '28px',
-        
+
         'ijikod-sm-md': '24px',
 
         'ijikod-sm': '16px',
@@ -57,6 +57,10 @@ module.exports = {
         'ijikod-px-80': '80px',
         'ijikod-px-40': '40px',
         'ijikod-px-50': '50px',
+      },
+
+      inset: {
+        'ijikod-hero-offset-t': '15%',
       },
 
       backgroundImage: {

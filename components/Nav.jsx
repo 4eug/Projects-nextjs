@@ -11,7 +11,7 @@ const NavItem = (props) => (
   </li>
 );
 
-function Nav() {
+function Nav(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -39,13 +39,17 @@ function Nav() {
 
       <div className="block md:hidden ">
         <div
-          onClick={() => setIsOpen(!isOpen)}
           className="inline-flex items-center justify-center p-2 text-black"
           aria-controls="mobile-menu"
           aria-expanded="false"
         >
           <span className="sr-only">Open Menu</span>
-          {!isOpen ? <IoMenu size={35} /> : <IoClose size={35} />}
+          <span
+            className="cursor-pointer"
+            onClick={() => props.setSideBar((isOpen) => !isOpen)}
+          >
+            {!props.sideBar ? <IoMenu size={35} /> : <IoClose size={35} />}
+          </span>
         </div>
       </div>
     </nav>

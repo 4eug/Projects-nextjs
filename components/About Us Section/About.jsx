@@ -8,8 +8,8 @@ function AboutSection() {
     <div>
       <h2>About Us</h2>
 
-      <div className="flex gap-10 items-end mt-10">
-        <div className="w-1/3">
+      <div className="flex flex-col gap-10 mt-10 items-center lg:flex-row lg:items-end">
+        <div className="lg:w-1/3">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -18,7 +18,7 @@ function AboutSection() {
           pariatur.
         </div>
 
-        <div className="w-1/3 flex flex-col items-center text-center">
+        <div className="lg:w-1/3 flex flex-col items-center text-center">
           <div className="h-20 w-20 relative">
             <Image
               layout="fill"
@@ -35,7 +35,7 @@ function AboutSection() {
           </p>
         </div>
 
-        <div className="w-1/3 flex flex-col items-center text-center">
+        <div className="lg:w-1/3 flex flex-col items-center text-center">
           <div className="h-20 w-20 relative">
             <Image
               layout="fill"
@@ -55,7 +55,7 @@ function AboutSection() {
 
       <div className="mt-36">
         <h3 className="text-center">Our Core Values</h3>
-        <div className="flex gap-16 mt-16">
+        <div className="flex flex-col lg:flex-row gap-16 mt-16">
           <AboutCard
             title="Excellence"
             content={

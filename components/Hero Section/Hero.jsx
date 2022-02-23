@@ -4,7 +4,6 @@ import Shape from "../utilities/shape/shape";
 
 function HeroSection() {
   return (
-    <>
       <section className="bg-ijikod-hero-gradient h-ijikod-h-hero relative flex justify-center items-center top-ijikod-hero-offset-t">
         <div className="z-20 text-center md:w-3/4 xl:w-1/2 px-5 -mt-8">
           <h1 className="leading-tight">Impactful Digital Experiences</h1>
@@ -22,7 +21,6 @@ function HeroSection() {
 
         <div className="hero-shape" />
       </section>
-    </>
   );
 }
 

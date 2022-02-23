@@ -4,6 +4,7 @@ import HeroSection from "../components/Hero Section/Hero";
 import AboutSection from "../components/About Us Section/About";
 import SideBar from "../components/utilities/sidebar";
 import { useState } from "react";
+import Services from "../components/Services Section/Services";
 
 export default function Home() {
   const [sideBar, setSideBar] = useState(false);
@@ -23,7 +24,7 @@ export default function Home() {
         <AboutSection />
         {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, nisi. */}
       </section>
-
+      <Services />
       <SideBar sideBar={sideBar} />
     </>
   );

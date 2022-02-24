@@ -5,6 +5,7 @@ import AboutSection from "../components/About Us Section/About";
 import SideBar from "../components/utilities/sidebar";
 import { useState } from "react";
 import Services from "../components/Services Section/Services";
+import PortfolioSection from "../components/Portfolio Section/Portfolio";
 
 export default function Home() {
   const [sideBar, setSideBar] = useState(false);
@@ -25,6 +26,9 @@ export default function Home() {
         {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, nisi. */}
       </section>
       <Services />
+      <section>
+      <PortfolioSection />
+      </section>
       <SideBar sideBar={sideBar} />
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../utilities/cards/card";
 import AboutCard from "../utilities/cards/aboutCard";
-import Image from "next/image";
+import UpperAboutCard from "../utilities/cards/upperAboutCard";
 
 function AboutSection() {
   return (
@@ -21,41 +21,21 @@ function AboutSection() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         </div>
 
-        <div className="lg:w-1/3 flex flex-col items-center text-center">
-          <div className="h-20 w-20 relative">
-            <Image
-              layout="fill"
-              objectFit="contain"
-              priority
-              src={"/rocket.svg"}
-              alt="rocket icon"
-            />
-          </div>
-          <h4 className="my-5">Mission</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            illo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          </p>
-        </div>
+        <UpperAboutCard 
+          title="Vision"
+          content={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut"
+          }
+          src="/rocket.svg"
+        />        
 
-        <div className="lg:w-1/3 flex flex-col items-center text-center">
-          <div className="h-20 w-20 relative">
-            <Image
-              layout="fill"
-              objectFit="contain"
-              priority
-              src={"/target.svg"}
-              alt="target icon"
-            />
-          </div>
-          <h4 className="my-5">Vision</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            illo  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          </p>
-        </div>
+        <UpperAboutCard 
+          title="Vision"
+          content={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut"
+          }
+          src="/target.svg"
+        />
       </div>
 
       <div className="mt-36">

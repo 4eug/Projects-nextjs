@@ -26,7 +26,7 @@ export default function Home() {
         {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, nisi. */}
       </section>
       <Services />
-      <section>
+      <section className="h-screen">
       <PortfolioSection />
       </section>
       <SideBar sideBar={sideBar} />

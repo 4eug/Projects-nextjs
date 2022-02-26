@@ -25,14 +25,13 @@ export default function Home() {
         <AboutSection />
       </section>
 
-      <section className="px-36 pb-8">
+      <section className="px-20 lg:px-36 pb-8">
         <Services />
       </section>
 
-      {/* <section className="h-screen">
+      <section className="px-5 md:px-20 lg:px-36 pb-10">
         <PortfolioSection />
-      </section> */}
-
+      </section>
 
       <SideBar sideBar={sideBar} />
     </>

@@ -22,6 +22,9 @@ module.exports = {
         'ijikod-dark': '#2A2E43',
         "ijikod-gray": "#7A7A7A",
         'ijikod-red': '#F40E41',
+        "ijikod-blue-deep": "#1438C9",
+        "ijikod-blue-dark": "#011F3D",
+        "ijikod-blue-light": "#1AA1DC",
         'ijikod-wine': '#8F1742',
         "ijikod-wine-dark-primary": "#62112E",
         'ijikod-wine-dark': '#7D0032',
@@ -41,6 +44,7 @@ module.exports = {
 
         'ijikod-sm': '16px',
         'ijikod-xsm': '14px',
+        'ijikod-xxsm': '10px',
       },
 
       minHeight: (theme) => ({

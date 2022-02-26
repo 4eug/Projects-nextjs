@@ -6,7 +6,7 @@ import ServiceComponent from "./ServiceComponent";
 function Services() {
   return (
     <div className="mt-20">
-      <h2 className="text-center text-rose-900">What We Do</h2>
+      <h2 className="text-center text-ijikod-wine-dark-primary">What We Do</h2>
 
       <div className="mt-32">
         <ServiceComponent

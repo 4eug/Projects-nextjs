@@ -3,38 +3,36 @@ import React from "react";
 
 function PortfolioCard(props) {
   return (
-    <section className="mt-20">
-        <div className="md: 2lg:px-24">
-            <div className="card">
-                <div className="w-full sm:w-2/3 h/2/5 sm:h-full px-2 xxsm:px-12 sm:px-7 pt-8 sm:pt-0 py-3">
-               <div className="pt-6 relative">
-                   <div className="object-left-top">
-                   <Image 
-                layout="fill"
-                objectFit="contain"
-                src={props.src}
-                alt="company-logo"
-                />
+    <section className={`w-full rounded-md p-14 ${props.className}`}>
+      <div className="flex justify-between gap-10">
+        <div className="w-full flex flex-col justify-between">
+          <div className="relative h-10 w-36">
+            <Image
+              layout="fill"
+              objectFit="contain"
+              src={props.src}
+              alt="company-logo"
+            />
+          </div>
+          <div className="mt-20 text-white">{props.description}</div>
+          <button className="white mt-5">Explore</button>
 
-                   </div>
-                <p className="mb-2 tracking-tight dark:text-white mt-20">
-                    {props.content}
-                </p>
-                <button className="white mt-10">
-                    Explore
-                </button>
-
-                <h5 className="mb-2 tracking-tight dark:text-white mt-10">{props.techs}</h5>
-                </div>
-            <div>
-
-            </div>
+          <h5 className="tracking-tight text-ijikod-xxsm text-white dark:text-white mt-10">
+            {props.techs}
+          </h5>
         </div>
 
-    </div>
-
-    </div>
-
+        <div className="w-full">
+          <div className="relative h-full w-full">
+            <Image
+              layout="fill"
+              objectFit="contain"
+              src={props.leftSrc}
+              alt="company-logo"
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

@@ -6,6 +6,9 @@ import SideBar from "../components/utilities/sidebar";
 import { useState } from "react";
 import Services from "../components/Services Section/Services";
 import PortfolioSection from "../components/Portfolio Section/Portfolio";
+import IndustriesSection from "../components/Industries Section/Indust"
+import Join from "../components/Join Section/join";
+import Stack from "../components/Stack Section/stack";
 
 export default function Home() {
   const [sideBar, setSideBar] = useState(false);
@@ -31,6 +34,18 @@ export default function Home() {
 
       <section className="px-5 md:px-20 lg:px-36 pb-10">
         <PortfolioSection />
+      </section>
+
+      <section className="main bg-ijikod-dark py-20 text-white mt-20">
+        <IndustriesSection />
+      </section>
+
+      <section className="px-20 lg:px-36 pb-8">
+        <Join />
+      </section>
+
+      <section>
+        <Stack />
       </section>
 
       <SideBar sideBar={sideBar} />

@@ -18,17 +18,22 @@ export default function Home() {
       </Head>
 
       <section className="h-screen">
-        <Nav sideBar={sideBar} setSideBar={setSideBar}/>
+        <Nav sideBar={sideBar} setSideBar={setSideBar} />
         <HeroSection />
       </section>
       <section className="main bg-ijikod-wine py-20 text-white">
         <AboutSection />
-        {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, nisi. */}
       </section>
-      <Services />
-      <section className="h-screen">
-      <PortfolioSection />
+
+      <section className="px-36 pb-8">
+        <Services />
       </section>
+
+      {/* <section className="h-screen">
+        <PortfolioSection />
+      </section> */}
+
+
       <SideBar sideBar={sideBar} />
     </>
   );

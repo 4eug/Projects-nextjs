@@ -20,8 +20,10 @@ module.exports = {
 
       colors: {
         'ijikod-dark': '#2A2E43',
+        "ijikod-gray": "#7A7A7A",
         'ijikod-red': '#F40E41',
         'ijikod-wine': '#8F1742',
+        "ijikod-wine-dark-primary": "#62112E",
         'ijikod-wine-dark': '#7D0032',
       },
 
@@ -43,6 +45,7 @@ module.exports = {
 
       minHeight: (theme) => ({
         'h-min-screen': '100vh',
+        'ijikod-px-450': '450px',
         ...theme('spacing'),
       }),
 
@@ -57,6 +60,7 @@ module.exports = {
         'ijikod-px-80': '80px',
         'ijikod-px-40': '40px',
         'ijikod-px-50': '50px',
+        'ijikod-px-450': '450px',
       },
 
       inset: {

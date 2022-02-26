@@ -20,7 +20,7 @@ function PortfolioSection() {
             "Design and development of a suite of apps for a Ghana based service management company"
           }
           src="/Ayuda.svg"
-          description={"Lorem ipsum dolor sit amet"}
+          description={"Design and development of a suite of apps for a Ghana based service management company"}
           leftSrc="/Ayuda.svg"
           techs="WEB DESIGN . MOBILE APP DESIGN . UI/UX DESIGN . WEB DEVELOPMENT . MOBILE DEVELOPMENT "
         />
@@ -34,9 +34,9 @@ function PortfolioSection() {
             "Design and development of a suite of apps for a Ghana based service management company"
           }
           src="/Ayuda.svg"
-          description={"Lorem ipsum dolor sit amet"}
+          description={"Monitor your health and the health of your vehicle the smart way"}
           leftSrc="/Ayuda.svg"
-          techs="WEB DESIGN . MOBILE APP DESIGN . UI/UX DESIGN . WEB DEVELOPMENT . MOBILE DEVELOPMENT "
+          techs=" UI/UX DESIGN . MOBILE APP DESIGN "
         />
       </div>
 
@@ -49,7 +49,7 @@ function PortfolioSection() {
             "Design and development of a suite of apps for a Ghana based service management company"
           }
           src="/Ayuda.svg"
-          description={"Lorem ipsum dolor sit amet"}
+          description={"Auto parts purchasing made easy. Web and mobile design and development for an auto parts client"}
           leftSrc="/Ayuda.svg"
           techs="WEB DESIGN . MOBILE APP DESIGN . UI/UX DESIGN . WEB DEVELOPMENT . MOBILE DEVELOPMENT "
         />

@@ -9,6 +9,7 @@ import PortfolioSection from "../components/Portfolio Section/Portfolio";
 import IndustriesSection from "../components/Industries Section/Indust"
 import Join from "../components/Join Section/join";
 import Stack from "../components/Stack Section/stack";
+import { ScrollToTop } from "../components/Scroll/scrollToTop";
 
 export default function Home() {
   const [sideBar, setSideBar] = useState(false);
@@ -44,11 +45,12 @@ export default function Home() {
         <Join />
       </section>
 
-      <section>
+      <section className="px-20 lg:px-36 pb-8">
         <Stack />
       </section>
 
       <SideBar sideBar={sideBar} />
+      <ScrollToTop />
     </>
   );
 }

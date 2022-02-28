@@ -1,4 +1,5 @@
 import Marquee from "react-fast-marquee";
+import Image from "next/image"
 
 function Stack() {
     return(
@@ -8,10 +9,18 @@ function Stack() {
                 </h2>
 
                 <div className="mt-10">
+
                     <Marquee >
-                        <h4 className="text-black"> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</h4>
+                        
+                        <div className="h-ijikod-px-150 py-50 w-full relative">
+                        <Image
+                            layout="fill"
+                            objectFit="cover"
+                            priority
+                            src={"/stack.png"}
+                            alt="Web-Image"
+                        />
+                        </div>
                     </Marquee>
                 </div>
 

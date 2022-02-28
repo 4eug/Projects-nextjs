@@ -6,7 +6,7 @@ function PortfolioCard(props) {
     <section className={`w-full rounded-md p-14 ${props.className}`}>
       <div className="flex justify-between gap-10">
         <div className="w-full flex flex-col justify-between">
-          <div className="relative h-10 w-36">
+          <div className="relative h-20 w-36">
             <Image
               layout="fill"
               objectFit="contain"
@@ -15,7 +15,7 @@ function PortfolioCard(props) {
             />
           </div>
           <div className="mt-20 text-white">{props.description}</div>
-          <button className="white mt-5">Explore</button>
+          <button className="white mt-10">Explore</button>
 
           <h5 className="tracking-tight text-ijikod-xxsm text-white dark:text-white mt-10">
             {props.techs}
@@ -23,7 +23,7 @@ function PortfolioCard(props) {
         </div>
 
         <div className="w-full">
-          <div className="relative h-full w-full">
+          <div className="relative md:h-full w-full ">
             <Image
               layout="fill"
               objectFit="contain"

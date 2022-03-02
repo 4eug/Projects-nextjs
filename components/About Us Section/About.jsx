@@ -1,9 +1,49 @@
 import React from "react";
-import Card from "../utilities/cards/card";
 import AboutCard from "../utilities/cards/aboutCard";
 import UpperAboutCard from "../utilities/cards/upperAboutCard";
 
 function AboutSection() {
+  const aboutArray = [
+    {
+      title: "Excellence",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+      imgSrc: "/core-value-icon-1.svg",
+      id: 1,
+    },
+    {
+      title: "Vision",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+      imgSrc: "/core-value-icon-2.svg",
+      id: 2,
+    },
+    {
+      title: "Impact",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+      imgSrc: "/core-value-icon-3.svg",
+      id: 3,
+    },
+  ];
+
+  const upperArray = [
+    {
+      title: "Vision",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+      imgSrc: "/rocket.svg",
+      id: 1,
+    },
+    {
+      title: "Vision",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+      imgSrc: "/target.svg",
+      id: 2,
+    },
+  ];
+
   return (
     <div>
       <h2>About Us</h2>
@@ -15,55 +55,33 @@ function AboutSection() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut tempor
-           incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          pariatur. tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut
         </div>
 
-        <UpperAboutCard 
-          title="Vision"
-          content={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut"
-          }
-          src="/rocket.svg"
-        />        
-
-        <UpperAboutCard 
-          title="Vision"
-          content={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut"
-          }
-          src="/target.svg"
-        />
+        {upperArray.map((item) => (
+          <UpperAboutCard
+            title={item.title}
+            content={item.content}
+            src={item.imgSrc}
+            key={item.id}
+          />
+        ))}
       </div>
 
       <div className="mt-36">
         <h3 className="text-center">Our Core Values</h3>
         <div className="flex flex-col lg:flex-row gap-16 mt-16">
-          <AboutCard
-            title="Excellence"
-            content={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            }
-            src="/core-value-icon-1.svg"
-          />
-
-          <AboutCard
-            title="Excellence"
-            content={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            }
-            src="/core-value-icon-2.svg"
-          />
-
-          <AboutCard
-            title="Excellence"
-            content={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            }
-            src="/core-value-icon-3.svg"
-          />
+          {aboutArray.map((item) => (
+            <AboutCard
+              title={item.title}
+              content={item.content}
+              src={item.imgSrc}
+              key={item.id}
+            />
+          ))}
         </div>
 
         <div className="mt-32 flex items-center justify-center">

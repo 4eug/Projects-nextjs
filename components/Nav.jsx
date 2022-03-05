@@ -35,7 +35,12 @@ function Nav(props) {
         </ul>
       </div>
 
-      <button className="red hidden md:block">Contact Us</button>
+      <button
+        className="red hidden md:block"
+        onClick={() => props.setContactSideBar(true)}
+      >
+        Contact Us
+      </button>
 
       <div className="block md:hidden ">
         <div

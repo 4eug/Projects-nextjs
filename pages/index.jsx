@@ -6,12 +6,15 @@ import SideBar from "../components/utilities/sidebar";
 import { useState } from "react";
 import Services from "../components/Services Section/Services";
 import PortfolioSection from "../components/Portfolio Section/Portfolio";
-import IndustriesSection from "../components/Industries Section/Indust"
+import IndustriesSection from "../components/Industries Section/Indust";
 import Join from "../components/Join Section/join";
 import Stack from "../components/Stack Section/stack";
+import ContactSideBar from "../components/utilities/contact";
 
 export default function Home() {
   const [sideBar, setSideBar] = useState(false);
+
+  const [contactSideBar, setContactSideBar] = useState(false);
   return (
     <>
       <Head>
@@ -21,7 +24,11 @@ export default function Home() {
       </Head>
 
       <section className="h-screen">
-        <Nav sideBar={sideBar} setSideBar={setSideBar} />
+        <Nav
+          sideBar={sideBar}
+          setSideBar={setSideBar}
+          setContactSideBar={setContactSideBar}
+        />
         <HeroSection />
       </section>
       <section className="main bg-ijikod-wine py-20 text-white">
@@ -47,6 +54,13 @@ export default function Home() {
       <section className="px-20 lg:px-36 pb-8">
         <Stack />
       </section>
+
+      {/* contactSideBar */}
+
+      <ContactSideBar
+        contactSideBar={contactSideBar}
+        setContactSideBar={setContactSideBar}
+      />
 
       <SideBar sideBar={sideBar} />
     </>

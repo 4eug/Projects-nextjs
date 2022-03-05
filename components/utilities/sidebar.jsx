@@ -39,11 +39,11 @@ const SideBar = (props) => {
 
             <div className="m-auto">
               <ul className="flex flex-col items-center gap-10">
-              <NavItem href="/about-us" text="About us" />
-          <NavItem href="/services" text="Services" />
-          <NavItem href="/portfolio" text="Portfolio" />
-          <NavItem href="/join-us" text="Join Us" />
-          <button className="red">Contact Us</button>
+                <NavItem href="/about-us" text="About us" />
+                <NavItem href="/services" text="Services" />
+                <NavItem href="/portfolio" text="Portfolio" />
+                <NavItem href="/join-us" text="Join Us" />
+                <button className="red">Contact Us</button>
               </ul>
             </div>
           </motion.div>

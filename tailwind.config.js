@@ -22,6 +22,7 @@ module.exports = {
         'ijikod-dark': '#2A2E43',
         'ijikod-gray-dark':'#0000000F',
         "ijikod-gray": "#7A7A7A",
+        "ijikod-dark-blue":"#2A2E43",
         'ijikod-red': '#F40E41',
         "ijikod-blue-deep": "#1438C9",
         "ijikod-blue-dark": "#011F3D",

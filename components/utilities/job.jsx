@@ -4,6 +4,33 @@ import React from "react";
 import JobOpeningCard from "./cards/jobOpeningCard";
 
 const JobSideBar = (props) => {
+  const jobArray = [
+    {
+      title: "Frontend Developer Intern",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+      id: 1,
+    },
+    {
+      title: "Seasoned UI/UX Designer",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+      id: 2,
+    },
+    {
+      title: "NodeJS Developer",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+      id: 3,
+    },
+    {
+      title: "Graphics",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,illo tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+      id: 4,
+    },
+  ];
+
   return (
     <AnimatePresence>
       {props.jobSideBar && (
@@ -28,9 +55,13 @@ const JobSideBar = (props) => {
               />
             </div>
 
-            <div className="px-10">
-              <JobOpeningCard />
-            </div>
+            {jobArray.map((item) => (
+              <JobOpeningCard
+                title={item.title}
+                content={item.content}
+                key={item.id}
+              />
+            ))}
           </motion.div>
         </>
       )}

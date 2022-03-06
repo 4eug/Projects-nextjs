@@ -31,6 +31,10 @@
     @apply mt-5 btn-common bg-ijikod-red h-ijikod-px-50 w-ijikod-px-400 text-white;
   }
 
+  button.apply {
+    @apply btn-common bg-ijikod-red text-white transition-colors duration-300 hover:bg-red-600;
+  }
+
   input.form {
     @apply btn-common mt-5 border-gray-400 text-white text-sm rounded-full  block w-full p-2.5 bg-ijikod-form-color;
   }

@@ -32,7 +32,7 @@
   }
 
   button.apply {
-    @apply btn-common bg-ijikod-red text-white transition-colors duration-300 hover:bg-red-600;
+    @apply btn-common mt-4 ml-48  bg-ijikod-red text-white transition-colors duration-300 hover:bg-red-600;
   }
 
   input.form {

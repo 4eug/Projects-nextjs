@@ -43,7 +43,12 @@ const SideBar = (props) => {
                 <NavItem href="/services" text="Services" />
                 <NavItem href="/portfolio" text="Portfolio" />
                 <NavItem href="/join-us" text="Join Us" />
-                <button className="red">Contact Us</button>
+                <button
+                  className="red"
+                  onClick={() => props.setContactSideBar(true)}
+                >
+                  Contact Us
+                </button>
               </ul>
             </div>
           </motion.div>

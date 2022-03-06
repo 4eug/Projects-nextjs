@@ -31,6 +31,7 @@ export default function Home() {
           sideBar={sideBar}
           setSideBar={setSideBar}
           setContactSideBar={setContactSideBar}
+          setJobSideBar={setJobSideBar}
         />
         <HeroSection />
       </section>

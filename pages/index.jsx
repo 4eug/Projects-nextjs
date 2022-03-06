@@ -10,11 +10,14 @@ import IndustriesSection from "../components/Industries Section/Indust";
 import Join from "../components/Join Section/join";
 import Stack from "../components/Stack Section/stack";
 import ContactSideBar from "../components/utilities/contact";
+import JobSideBar from "../components/utilities/job";
 
 export default function Home() {
   const [sideBar, setSideBar] = useState(false);
 
   const [contactSideBar, setContactSideBar] = useState(false);
+  const [jobSideBar, setJobSideBar] = useState(false);
+
   return (
     <>
       <Head>
@@ -48,7 +51,7 @@ export default function Home() {
       </section>
 
       <section className="px-20 lg:px-36 pb-8">
-        <Join />
+        <Join setJobSideBar={setJobSideBar} />
       </section>
 
       <section className="px-20 lg:px-36 pb-8">
@@ -61,6 +64,8 @@ export default function Home() {
         contactSideBar={contactSideBar}
         setContactSideBar={setContactSideBar}
       />
+
+      <JobSideBar jobSideBar={jobSideBar} setJobSideBar={setJobSideBar} />
 
       <SideBar sideBar={sideBar} />
     </>

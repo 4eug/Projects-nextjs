@@ -5,7 +5,9 @@ function JobOpeningCard(props) {
         <div className="text-left mt-4">
           <h4 className="text-white">{props.title}</h4>
           <p className="mt-7 text-ijikod-sm">{props.content}</p>
-          <button className="apply">Apply Now</button>
+          <div className="flex justify-end">
+            <button className="apply">Apply Now</button>
+          </div>
         </div>
       </div>
     </div>

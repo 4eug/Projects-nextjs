@@ -45,7 +45,10 @@ const SideBar = (props) => {
                 <NavItem href="/join-us" text="Join Us" />
                 <button
                   className="red"
-                  onClick={() => props.setContactSideBar(true)}
+                  onClick={() => {
+                    props.setContactSideBar(true);
+                    props.setSideBar(false);
+                  }}
                 >
                   Contact Us
                 </button>

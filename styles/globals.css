@@ -28,11 +28,11 @@
   }
 
   button.textarea {
-    @apply mt-5 btn-common bg-ijikod-red h-ijikod-px-50 w-ijikod-px-400 text-white;
+    @apply mt-5 w-full btn-common bg-ijikod-red h-ijikod-px-50 text-white;
   }
 
   button.apply {
-    @apply btn-common mt-4 ml-48  bg-ijikod-red text-white transition-colors duration-300 hover:bg-red-600;
+    @apply btn-common mt-4 w-2/4 bg-ijikod-red text-white transition-colors duration-300 hover:bg-red-600;
   }
 
   input.form {

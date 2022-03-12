@@ -44,7 +44,7 @@ const JobSideBar = (props) => {
               x: "100%",
             }}
             transition={{ type: "spring", bounce: 0, duration: 0.8 }}
-            className="fixed bg-ijikod-dark-blue text-white shadow-lg top-0 right-0 w-1/4 h-screen flex flex-col gap-10 z-50"
+            className="fixed bg-ijikod-dark-blue text-white shadow-lg top-0 right-0 w-full sm:w-1/3 lg:w-1/4 h-screen overflow-y-auto flex flex-col gap-10 z-50"
           >
             <div className="border-b border-gray-700 p-5 flex justify-between">
               <h5 className="px-4">Job Openings</h5>

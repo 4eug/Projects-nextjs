@@ -1,12 +1,12 @@
 function ContactCard(props) {
   return (
-    <div className="px-10 text-xl">
+    <div className="px-10 text-ijikod-xsm">
       Address
-      <h2 className="text-sm mt-3 font-light">
+      <h2 className="text-ijikod-xxsm-a mt-3 font-light">
         16 Ayuda Ritz Street Adenta, Accra — Ghana GS-012-3456 mail@ijikod.com
         +233 123 456 789
       </h2>
-      <div className="mt-5 text-xl">
+      <div className="mt-5 text-ijikod-xsm">
         Contact Us
         <input
           type="name"
@@ -25,9 +25,7 @@ function ContactCard(props) {
         <textarea
           name="message"
           id="message"
-          cols="30"
-          rows="10"
-          className="form"
+          className="form resize-none"
           placeholder="Message"
         ></textarea>
         <button className="textarea">Submit</button>

@@ -43,6 +43,7 @@ module.exports = {
 
         "ijikod-sm": "16px",
         "ijikod-xsm": "14px",
+        "ijikod-xxsm-a": "12px",
         "ijikod-xxsm": "10px",
       },
 

@@ -68,7 +68,7 @@ export default function Home() {
 
       <JobSideBar jobSideBar={jobSideBar} setJobSideBar={setJobSideBar} />
 
-      <SideBar sideBar={sideBar} />
+      <SideBar sideBar={sideBar} setSideBar={setSideBar} setContactSideBar={setContactSideBar} />
     </>
   );
 }

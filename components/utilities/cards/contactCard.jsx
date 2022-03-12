@@ -1,4 +1,30 @@
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 function ContactCard(props) {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_USER_ID"
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully");
+        },
+        (error) => {
+          alert(error.message);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div className="px-10 text-ijikod-xsm">
       Address
@@ -8,27 +34,29 @@ function ContactCard(props) {
       </h2>
       <div className="mt-5 text-ijikod-xsm">
         Contact Us
-        <input
-          type="name"
-          id="name"
-          className="form"
-          placeholder="Name"
-          required
-        />
-        <input
-          type="email"
-          id="email"
-          className="form"
-          placeholder="Email"
-          required
-        />
-        <textarea
-          name="message"
-          id="message"
-          className="form resize-none"
-          placeholder="Message"
-        ></textarea>
-        <button className="textarea">Submit</button>
+        <form ref={form} onSubmit={sendEmail}>
+          <input
+            type="name"
+            name="name"
+            className="form"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            email="email"
+            className="form"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            className="form resize-none"
+            placeholder="Message"
+          ></textarea>
+          <button className="textarea">Submit</button>
+        </form>
       </div>
     </div>
   );

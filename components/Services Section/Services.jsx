@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import ServiceComponent from "./ServiceComponent";
 
 function Services() {
@@ -15,7 +16,7 @@ function Services() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat",
       imgSrc: "/mobileImage.svg",
-      id: 1,
+      id: 2,
       lgFlexDirection: "lg:flex-row-reverse",
     },
     {
@@ -23,34 +24,38 @@ function Services() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat",
       imgSrc: "/IoT.png",
-      id: 1,
+      id: 3,
     },
     {
       title: "UI/UX",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat",
       imgSrc: "/UIUX.svg",
-      id: 1,
+      id: 4,
       lgFlexDirection: "lg:flex-row-reverse",
     },
   ];
 
   return (
-    <div className="mt-20">
-      <h2 className="text-center text-ijikod-wine-dark-primary">What We Do</h2>
+    <Fade cascade>
+      <div id="#services" className="mt-20">
+        <h2 className="text-center text-ijikod-wine-dark-primary">
+          What We Do
+        </h2>
 
-      <div className="mt-32">
-        {serviceArray.map((Item) => (
-          <ServiceComponent
-            title={Item.title}
-            description={Item.description}
-            src={Item.imgSrc}
-            lgFlexDirection={Item.lgFlexDirection}
-            key={Item.id}
-          />
-        ))}
+        <div className="mt-32">
+          {serviceArray.map((Item) => (
+            <ServiceComponent
+              title={Item.title}
+              description={Item.description}
+              src={Item.imgSrc}
+              lgFlexDirection={Item.lgFlexDirection}
+              key={Item.id}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 }
 export default Services;
